@@ -1,0 +1,277 @@
+/* Forces a scrollbar */
+html {
+	overflow-y: scroll;
+  }
+ /* To make the image(logo) expand on hover */
+  img:hover {
+	transform: scale(1.1);
+  }
+  
+  button:hover {
+	transform: scale(1.1);
+  }
+  
+  body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	font-family: 'Dosis', Arial, Helvetica, sans-serif;
+	background-size: fixed;
+	background-color: black;
+	background-size: cover;
+	background-position: center; 
+  }
+ 
+  /*For the Footer Part*/
+  .clear:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+  }
+  
+  .clear {
+	display: block;
+	clear: both;
+  } 
+  
+  /*To Remove special text for hyperlink*/
+  a {
+	outline: none;
+	text-decoration: none;
+  }
+    
+  .fl_left {
+	float: left;
+  }
+
+  .img{
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: normal;
+	vertical-align: middle;
+	transition: 0.3s; /* Transition for the hover expansion */
+  }
+  
+  div.wrapper{
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+  }
+  /*Header Banner*/
+  .row1,
+  .row1 a {
+	color: #FF9900;
+	background-color: #333333;
+	background-color: black;
+  }
+  
+  /*For the Body*/
+  .row2 {
+	color: black;
+	width: 100%;
+	margin: auto;
+	background-image: url("Spider.jpg");
+	background-color: black;
+	background-size: cover;
+    background-position: center; 
+  }
+
+  .row4{
+	color: black;
+	width: 100%;
+	margin: auto;
+	background-image: url("Strange.jpg");
+	background-color: black;
+	background-size: cover;
+    background-position: center; 
+  }
+  
+  /* Footer */
+  .row3,
+  .row3 a {
+	background-color: black;
+  } 
+  
+ /*General*/
+  #header,
+  #container,
+  #footer{
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+  }
+  /*For the menu part in the top right corner*/
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  /*for the logo*/
+  h1{
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+  }
+  
+  form{
+	max-width: 450px;
+	margin: auto;
+	padding: 0;
+	border: none;
+  }
+  
+  /*Header*/
+  
+  #header {
+	padding: 20px 0;
+  }
+  
+  #header #hgroup {
+	float: left;
+	margin: 0 0 20px 0;
+  }
+  
+  #header #hgroup h1{
+	font-weight: normal;
+	text-transform: none;
+	text-decoration-color: #cc0000;
+  }
+  
+  #header #hgroup h1 {
+	font-size: 50px;
+	text-decoration-color: #cc0000;
+  }
+  
+  
+  /*Navigation Menu on the top right*/
+  #header nav {
+	display: block;
+	float: right;
+	margin: 10px 0 0 0;
+	padding: 20px 0;
+	color: antiquewhite;
+	background-color: black;
+	font-size: 20px;
+  }
+  /*For the menu elements*/
+  #header nav ul {
+	padding: 0 20px;
+  }
+  
+  #header nav li {
+	display: inline;/*To make it stay in one line*/
+	margin-right: 20px;
+	text-transform: uppercase;
+  }
+  
+  #header nav li.last {
+	margin-right: 20px;
+  }
+  
+  /*for the text and box of the menu*/
+  #header nav li a {
+	color: white;
+	background-color: black;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  #header nav li a:hover {
+	color: #ddd;
+	font-size: 22px;
+  }
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div{
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  	margin-top:30px;
+	margin-left: -260px;
+  	border-radius: 7px;
+}
+
+.montform .feedback-input {
+	color:#3c3c3c;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: white;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width: 400px;
+	box-sizing: border-box;
+	border: 1px solid orangered;
+}
+/*Inputs styles*/
+.montform .feedback-input:focus{
+	background: #fff;
+	border: 3px solid black;
+	color: black;
+	outline: none;
+  	padding: 13px 13px 13px 54px;
+}
+
+.montform  textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+.montform  input:hover, .montform  textarea:hover,
+.montform  input:focus, .montform  textarea:focus {
+	background-color:#e6e6e6;
+}
+
+.button{
+	float: center; 
+	width: 400px; 
+	cursor:pointer;
+	background-color: black;
+	color: #CACACA;
+	font-size:24px;
+	padding-top:15px;
+	padding-bottom:15px;
+   	font-weight:700;
+}
+
+.button:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid yellowgreen; 
+  }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}

@@ -1,0 +1,597 @@
+/* Forces a scrollbar */
+html {
+    overflow-y: scroll;
+  }
+  
+  
+  /* To make the image(logo) expand on hover */
+  img:hover {
+    
+    transform: scale(1.1);
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Dosis', Arial, Helvetica, sans-serif;
+    /* background-image: url(""); */ 
+    /* background-size: */ 
+    background-color:  black;
+    
+  }
+  /*For the Footer Part*/
+  .clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+  }
+  
+  .clear {
+    display: block;
+    clear: both;
+  }
+  
+  /*To Remove special text for hyperlink*/
+  a {
+    outline: none;
+    text-decoration: none;
+  }
+  
+  
+  .fl_left {
+    float: left;
+  }
+  
+  .fl_right {
+    float: right;
+  }
+  
+  img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+    vertical-align: middle;
+    transition: 0.3s; /* Transition for the hover expansion */
+  }
+  
+  /*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+  
+  address,
+  article,
+  aside,
+  figcaption,
+  figure,
+  footer,
+  header,
+  nav,
+  section {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Main Content*/
+  
+  div.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  /*Header Banner*/
+  .row1,
+  .row1 a {
+    color: #FF9900;
+    background-color: #333333;
+    background-color: black;
+  }
+  
+  /*For the Body*/
+  .row2 {
+    color: white;
+    background-image: url("WP1.jpg");
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 28px;
+  }
+    .resize-fill-and-clip{ 
+        /* Resize to fill and retain aspect ratio.
+        Will cause clipping if aspect ratio of box is different from image. */ 
+        background-size: cover;
+    }
+
+.row4 {
+        color: white;
+        background-image: url("WP2.jpg");
+        background-color: rgba(0, 0, 0, 0.2);
+        /* background-attachment: fixed ; */
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: center; 
+}
+
+   .irnmn2{
+        font-size: 35px;
+        text-shadow: 8px 8px 12px #000000;
+        font-weight: bold;
+    }
+
+ .row5 {
+        color:#f4fc03;
+        font-size: 55px;
+        text-shadow: 8px 8px 12px #000000;
+        font-weight: bold;
+        background-image: url("WP4.jpg");
+        background-color: rgba(0, 0, 0, 0.2);
+        /* background-attachment: fixed ; */
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: center; 
+}
+
+.row6{
+    color: white;
+    background-image: url("WP5.gif");
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center; 
+    font-size: 70px;
+    text-shadow: 8px 8px 12px #000000;
+    font-weight: bold;
+}
+
+.row7{
+  color: white;
+  background-image: url("WP7.jpg");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center; 
+  font-size: 28px;
+  text-shadow: 5px 5px 5px black;
+  font-weight: bold;
+}
+  
+.row8{
+    color: white;
+    background-image: url("WP8.jpg");
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center; 
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+}
+
+.row9{
+  color: white;
+  background-image: url("WP9.gif");
+  background-size: cover;
+  background-position: center; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  text-shadow: 5px 5px 5px black;
+  font-weight: bold;
+}
+
+
+  .resize-best-fit{
+        background-size: contain;
+    }
+   
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 795px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+     .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    } 
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 25px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/8 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 20px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    /* .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    } */
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+
+  /* Footer */
+.row3,
+.row3 a {
+    color:red;
+    background-color: black;
+}
+  
+        .stretch-content{
+            /* Will stretch to width/height of element */
+            background-size: 100% 100%;
+        }
+  
+  
+  /*General*/
+  
+  #header,
+  #container,
+  #footer {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+  }
+  /*For the menu part in the top right corner*/
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /*for the logo*/
+  h1{
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+  
+  
+  form{
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  /*For the logos on the homepage*/
+  .one_third,
+  .two_third,
+  .three_third {
+    display: block;
+    float: left;
+    width: 200px;
+    border-color: transparent;
+  }
+  
+  .one_third {
+    margin-left: 0%;
+  }
+  
+  .two_third {
+    padding-left: 20px;
+  }
+  
+  .three_third {
+    padding-left: 40px;
+  }
+  
+  
+  /*Header*/
+  
+  #header {
+    padding: 20px 0;
+  }
+  
+  #header #hgroup {
+    float: left;
+    margin: 0 0 20px 0;
+  }
+  
+  #header #hgroup h1{
+    font-weight: normal;
+    text-transform: none;
+    text-decoration-color: #cc0000;
+  }
+  
+  #header #hgroup h1 {
+    font-size: 50px;
+    text-decoration-color: #cc0000;
+  }
+  
+  
+  /*Navigation Menu on the top right*/
+  #header nav {
+    display: block;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 20px 0;
+    color: antiquewhite;
+    background-color: black;
+    font-size: 20px;
+  }
+  /*For the menu elements*/
+  #header nav ul {
+    padding: 0 20px;
+  }
+  
+  #header nav li {
+    display: inline;/*To make it stay in one line*/
+    margin-right: 20px;
+    text-transform: uppercase;
+  }
+  
+  #header nav li.last {
+    margin-right: 20px;
+  }
+  /*for the text and box of the menu*/
+  #header nav li a {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  #header nav li a:hover {
+    color: #ddd;
+    font-size: 22px;
+  }
+  
+  /*The Body part, the gallery of the product page and the subtitle part on the homepage*/
+  
+  #container {
+    padding: 30px 0;
+  }
+  
+  
+  /* ------the subtitle part-----*/
+  
+  #container #subtitle {
+    padding: 0 0 20px 0;
+    border-bottom: 3px solid black;
+    text-align: center;
+  }
+  
+  #container #subtitle p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8em;
+  }
+  
+  /*Display of the Logos on the main page*/
+  
+  #container #homepage {
+    display: block;
+    width: 100%;
+    line-height: 1.6em;
+    font-size: 20px;
+    font-display: white; 
+  }
+  
+  /*For the arrangement of the logos*/
+  /* #container #homepage #latest {
+    margin-bottom: 50px;
+  }
+  
+  #container #homepage #latest article figure ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #container #homepage #latest article figure ul li {
+    margin-bottom: 50px;
+  }
+  
+  #container #homepage #latest article figure ul li img {
+    padding: 4px;
+    border: 0px solid #D6D6D6;
+    text-align: center;
+  }
+  
+  #container #homepage #latest article figure figcaption {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 0 0 20px 0;
+  
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  */
+  /*Footer-*/
+
+  #portfolio {
+    display: block;
+    width: 100%;
+    line-height: 1.8em;
+  }
+  
+  #portfolio ul,
+  #portfolio p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+  }
+  
+  /*first picture in the row*/
+  
+  #portfolio li {
+    display: block;
+    float: left;
+    width: 450px;
+    margin: 0 60px 40px 0;
+    padding: 0;
+    margin-top: 8px;
+  }
+  
+  #portfolio li.last {
+    margin-right: 0;
+    margin-top: 8px;
+  }
+  
+  /*second picture in the row*/
+  
+  #portfolio article,
+  #portfolio article figure {
+    display: block;
+    width: 100%;
+  }
+  
+  #portfolio article figure figcaption {
+    display: block;
+    float: right;
+    width: 200px;
+    padding: 15px 0 0 0;
+    border-top: 4px solid #CC7753;
+  }
+  
+  #portfolio article figure figcaption header {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #portfolio article figure figcaption p.more {
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+  
+  #portfolio article figure img.phone {
+    float: left;
+    width: 100px;
+    height: 200px;
+    margin-left: 12%;
+    border-radius: 12%;
+  }
+  
+  #portfolio article figure img.top {
+    float: left;
+    width: 220px;
+    height: 200px;
+    border-radius: 20%;
+    transition: 0.4s;
+  }
+  
+  #portfolio article figure img.top2 {
+    float: left;
+    width: 180px;
+    height: 200px;
+    margin-left: 4%;
+    border-radius: 20%;
+    transition: 0.4s;
+  }
+  
+  img:hover {
+    transform: scale(1.3);
+  }
+  
+  /* For the buttons */
+  .button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: left;
+    width: 50%;
+  
+    cursor: pointer;
+    background-color: #39ff14;
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -4px;
+    font-weight: 700;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: rgb(3, 3, 3);
+  }
+  
+  #footer {
+    display: block;
+    padding: 20px 0;
+    /* clear:both; */
+    
+  }
+  
+  #footer p {
+    margin: 0;
+    padding: 0;
+  }
+
+ 

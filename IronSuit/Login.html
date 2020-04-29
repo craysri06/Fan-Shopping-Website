@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/register.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper row1">
+        <header id="header" class="clear">
+            <div id="hgroup">
+                <h1>
+                    <a href="Home.html"><img src="images/home.png" height="110x" width="210px" /></a>
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapper row4">
+        <!-- <div id="form-div"> -->
+        <br /><br /><br />
+        <form class="montform" id="reused_form">
+            <p><br><br><br><br><br><br><br></p>
+            <p>
+                <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+            </p>
+            <br /><br />
+            <p>
+                <input name="password" type="password" required class="feedback-input" id="password"
+                    placeholder="Password" />
+            </p>
+            <br /><br /><br /><br /><br />
+            <div class="submit">
+                <button type="submit" onclick="check()" class="button center">SUBMIT</button>
+                <div class="ease"></div>
+            </div>
+
+            <p><br><br><br><br><br></p>
+        </form>
+    </div>
+
+    <div class="wrapper row3">
+        <footer id="footer" class="clear">
+            <p class="fl_left">
+                <a style="color: red; font-size:20px;">Copyright &copy;</a>
+                <a href="https://github.com/craysri06" style="color: red; font-size: 20px;">Sriranjan S</a>
+            </p>
+        </footer>
+    </div>
+   
+    <script src="js/login.js"></script>
+</body>
+
+</html>
