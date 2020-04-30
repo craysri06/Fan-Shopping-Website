@@ -26,6 +26,15 @@ function nameCheck(name, low, up) {
 
 function emailCheck(email) {
     var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    // ^ = match beginning of the line
+    // \w = find a word char
+    // + = match at least that char
+    // \. = match full stop
+    // () = group the search
+    // .? = optional (question mark)
+    // {x,y} = match from number x to y
+    // .* = AND, it is used to AND many groups
+    // | = OR, to use for many groups
 
     if (email.match(emailformat)) {
         return true;
